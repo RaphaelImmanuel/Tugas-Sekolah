@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var komentar = prompt('Nama Pengirim')
+         document.write(komentar,"<br>")
+    
+        var komentar = prompt('Nama Penerima')
+        document.write(komentar,"<br>")
+
+        var komentar = prompt('Jarak Pengiriman')
+        document.write(komentar,"<br>" )
+
+        var komentar = prompt('Alamat Penerima')
+        document.write(komentar,"<br>")
+
+        var komentar = prompt('Jenis Barang')
+        document.write(komentar,"<br>")
+
+        var km1 = "Jarak pengiriman : "
+        var km2 = prompt ("Masukan jarak pengiriman (KM)");
+        document.write(km1)
+        document.write(km2)
+
+        var jarak_1 = ".....Total harga pengiriman :RP."
+        var jarak_2 = prompt("Ulangi!(tidak menggunakan satuan kilo (km))")
+        var jrk = (jarak_2*10000)
+        if(jrk>=50000){
+            const nk1 = 0.1
+            var jml = jrk*nk1
+            var hsl = jrk-jml
+            document.write(jarak_1)
+            document.write(hsl)
+        }else{
+            document.write(jarak_1)
+            document.write(jrk)
+        }
+       
+
+        
+    </script>
+</body>
+</html>
