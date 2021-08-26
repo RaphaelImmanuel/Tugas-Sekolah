@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rumus">
+        <script>
+           
+            var pilih = prompt("PERSEGI, PERSEGI PANJANG, SEGITIGA, JAJAR GENJANG")
+            if(pilih === "PERSEGI"){
+                
+                var sisi1 = prompt("Masukkan sisi")
+                var sisi2 = prompt("Masukkan sisi")
+                var hasil = sisi1*sisi2
+                document.write("<b>LUAS PERSEGI</b> <br>")
+                document.write("SISI: ", sisi1, "<br>" )
+                document.write("SISI: ", sisi2, "<br>" )
+                document.write("hasil hitung S x S : ", hasil)
+
+            }else if(pilih === "PERSEGI PANJANG"){
+                var p = prompt("Masukkan panjang")
+                var l = prompt("Masukkan lebar")
+                var hasil = p*l
+                document.write("<b>LUAS PERSEGI PANJANG</b> <br>")
+                document.write("PANJANG : ", p, "<br>" )
+                document.write("LEBAR : ", l, "<br>" )
+                document.write("HASIL HITUNG P x L : ", hasil)
+
+            }else if(pilih === "SEGITIGA"){
+                var a = prompt("Masukkan alas")
+                var t = prompt("Masukkan tinggi")
+                var hasil = 0.5*a*t
+                document.write("<b>LUAS SEGITIGA</b> <br>")
+                document.write("ALAS : ", a, "<br>" )
+                document.write("TINGGI : ", t, "<br>" )
+                document.write("HASIL HITUNG A x T x 1/2 : ", hasil)
+
+            }else if(pilih === "JAJAR GENJANG"){
+                var a = prompt("Masukkan alas")
+                var t = prompt("Masukkan tinggi")
+                var hasil = a*t
+                document.write("<b>LUAS JAJAR GENJANG</b> <br>")
+                document.write("ALAS : ", a, "<br>" )
+                document.write("TINGGI : ", t, "<br>" )
+                document.write("HASIL HITUNG A x T : ", hasil)
+            }
+            
+        </script>
+        </div>
+</body>
+</html>
